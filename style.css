@@ -47,7 +47,7 @@ img {
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url(images/header-image.jpg);
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 650px;
 }
 .hero-section .container, .hero-section .row {
   height: 100%;

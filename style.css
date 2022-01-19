@@ -1,0 +1,53 @@
+html {
+  scroll-padding-top: 80px;
+}
+img {
+  max-width: 100%;
+}
+.navbar-brand img {
+  width: 200px;
+}
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.top-header a {
+  color: white;
+  text-decoration: none;
+}
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url(images/header-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+.hero-section .container, .hero-section .row {
+  height: 100%;
+}
+.section-title {
+  text-align: center;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #0d6efd;
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title span {
+  color: #0d6efd;
+}
+@media screen and (min-width: 768px) {
+  .about img {
+    width: 450px;
+  }
+}
+.services {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,url(images/services-section.jpg);
+}

@@ -1,3 +1,4 @@
+// Navigation Menu
 const navbarCollapse = document.querySelector('.navbar-collapse');
 const navlink = document.querySelectorAll('.nav-link');
 

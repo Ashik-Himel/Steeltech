@@ -79,14 +79,14 @@ img {
 }
 
 /* Contact Info Section */
-.contact-info .link-list a {
+.link-list a {
   display: block;
   text-decoration: none;
   color: #3e3e3e;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
-.contact-info .link-list a span {
+.link-list a span {
   font-weight: bold;
 }
 .contact-info iframe {
@@ -104,4 +104,51 @@ img {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/banner-section.jpg);
   background-size: cover;
   background-position: center;
+}
+
+/* Contact Us Section */
+.contact-us .card {
+  max-width: 450px;
+  position: relative;
+  z-index: 1;
+}
+.contact-us .card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d6efd;
+  border-radius: inherit;
+  transition: top 0.3s ease-out;
+  z-index: -1;
+}
+.contact-us .card:hover::after {
+  top: 0;
+}
+.contact-us .card:hover h2, .contact-us .card:hover i, .contact-us .card:hover a, .contact-us .card:hover span {
+  color: white !important;
+  transition: color 0.3s ease-out;
+}
+
+/* Footer Section */
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer ul a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.email-box {
+  max-width: 300px;
+}
+.email-box a {
+  margin-left: -5px;
+  padding-left: 30px;
+  padding-right: 30px;
 }

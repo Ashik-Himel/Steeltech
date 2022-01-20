@@ -347,7 +347,7 @@
         <div class="col-12 col-md-4 align-self-center">
           <h2 class="text-light mb-3">Knock Me For Contact</h2>
           <div class="email-box">
-            <form action="https://formsubmit.co/steeltech.workshop@gmail.com" method="post" class="d-flex">
+            <form action="https://formsubmit.co/a0fd62d3a3143a7f68647e5046e4f88e" method="post" class="d-flex">
               <input type="email" name="email" id="email" placeholder="Enter Your Email" class="form-control">
               <input type="submit" value="Send" class="btn btn-warning">
 
@@ -365,6 +365,26 @@
   <!-- Messenger Chat Plugin -->
   <div id="fb-root"></div>
   <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "110159741559451");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -22,3 +22,5 @@ $('.tab-titles span').click(function(){
   });
   return false;
 });
+
+// CounterUp JS

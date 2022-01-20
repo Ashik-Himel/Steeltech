@@ -95,7 +95,7 @@ img {
   border: 2px solid #0d6efd;
   border-radius: 15px;
 }
-.contact-info h1 {
+.contact-info .row h1 {
   color: #0d6efd;
 }
 
@@ -109,28 +109,10 @@ img {
 /* Contact Us Section */
 .contact-us .card {
   max-width: 450px;
-  position: relative;
-  z-index: 1;
-}
-.contact-us .card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: #0d6efd;
-  border-radius: inherit;
-  transition: top 0.3s ease-out;
-  z-index: -1;
 }
-.contact-us .card:hover::after {
-  top: 0;
-}
-.contact-us .card:hover h2, .contact-us .card:hover i, .contact-us .card:hover a, .contact-us .card:hover span {
-  color: white !important;
-  transition: color 0.3s ease-out;
+.contact-us .card h2, .contact-us a, .contact-us .card span, .contact-us i {
+  color: white;
 }
 
 /* Footer Section */
@@ -144,10 +126,8 @@ img {
   display: inline-block;
   margin-top: 0.5rem;
 }
-.email-box {
-  max-width: 300px;
-}
-.email-box a {
+
+.email-box input[type="submit"] {
   margin-left: -5px;
   padding-left: 30px;
   padding-right: 30px;

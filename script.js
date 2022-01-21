@@ -23,7 +23,3 @@ $('.tab-titles span').click(function(){
   return false;
 });
 
-// CounterUp JS
-$('.counter').counterUp({
-  time: 1000
-});
